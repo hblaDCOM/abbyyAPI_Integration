@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingestion Automation</title>
+    <title>Automated feed into ABBYY</title>
+    <link rel="icon" type="image/png" href="path/to/favicon.png"> <!-- Replace with the path to your favicon -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,37 +14,47 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
         }
         .container {
             text-align: center;
             background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 100%;
         }
         h1 {
-            color: #333;
+            color: #003366; /* Dark blue similar to Datacom branding */
+            margin-bottom: 20px;
         }
         .login-button {
             display: inline-block;
             margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 32px;
+            padding: 12px 28px;
+            font-size: 18px;
             color: #fff;
-            background-color: #007bff;
+            background-color: #0056b3; /* Button blue */
             border: none;
             border-radius: 5px;
             text-decoration: none;
             transition: background-color 0.3s ease;
         }
         .login-button:hover {
-            background-color: #0056b3;
+            background-color: #004080; /* Darker shade for hover */
+        }
+        .logo {
+            max-width: 100px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1><strong>Hi there, are you tired of manual ingestion?</strong></h1>
+        <img src="path/to/logo.png" alt="Datacom Logo" class="logo"> <!-- Replace with the path to your logo -->
+        <h1><strong>Hi there Insight Managers, are you tired of manual ingestion? </strong></h1>
         <a href="https://retrieve-abbyy-token.azurewebsites.net/api/tokenGrabber?action=login&code=i0kxvEPc1K1tmdSqAys2PPCTmw8eNrc9lCo8uIrw0295AzFuHHyuJw==" class="login-button">Login with ABBYY</a>
     </div>
 </body>
